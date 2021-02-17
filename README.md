@@ -17,3 +17,5 @@ stars.bas - a number guessing game
 
 overtone.bas - overtone series generator
 
+scale.bas - scale frequency generator
+
