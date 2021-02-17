@@ -19,3 +19,4 @@ overtone.bas - overtone series generator
 
 scale.bas - scale frequency generator
 
+beat.bas - harmonic beat-frequency analyzer
