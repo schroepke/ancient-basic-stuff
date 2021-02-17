@@ -14,3 +14,6 @@ letter.bas - a letter guessing game
 ## People's Computer Company newsletter Vol. 1, No. 2 (December 1972)
 
 stars.bas - a number guessing game
+
+overtone.bas - overtone series generator
+
