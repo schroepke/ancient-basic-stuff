@@ -22,3 +22,7 @@ scale.bas - scale frequency generator
 beat.bas - harmonic beat-frequency analyzer
 
 madcomposer.bas - random melody generator
+
+## People's Computer Company newsletter Vol. 1, No. 3 (February 1973)
+
+chomp.bas - simple strategy game for one or more players
