@@ -30,3 +30,5 @@ chomp.bas - simple strategy game for one or more players
 stack.bas - demonstration of push/pop
 
 pythagorean.bas - Pythagorean scale
+
+mugwump.bas - hide and seek game
