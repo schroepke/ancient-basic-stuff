@@ -31,6 +31,8 @@ stack.bas - demonstration of push/pop
 
 pythagorean.bas - Pythagorean scale
 
+## People's Computer Company newsletter Vol. 1, No. 4 (April 1973)
+
 mugwump.bas - hide and seek game
 
 scale2.bas - tempered scale frequency generator
