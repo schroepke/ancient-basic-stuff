@@ -37,3 +37,4 @@ mugwump.bas - hide and seek game
 
 scale2.bas - tempered scale frequency generator
 
+hurkle.bas - hide and seek game
