@@ -1,0 +1,80 @@
+100 rem *** HURKLE - PEOPLE'S COMPUTER COMPANY, MENLO PARK, CA
+110 randomize timer
+120 rem *** N IS THE NUMBER OF GUESSES ALLOWED
+130 n=5
+140 print "DO YOU WANT THE RULES (1=YES  0=NO)";
+150 input z
+160 if z<>1 then goto 490
+170 rem *** HERE ARE THE RULES
+180 print "A HURKLE IS HIDING IN A GRID, LIKE THE ONE BELOW."
+190 print
+200 print
+210 print tab(26);"NORTH"
+220 print
+230 for k=9 to 0 step -1
+240 if k<>4 then goto 270
+250 print tab(8);"WEST   4";tab(20);". . . . . . . . . .   EAST"
+260 goto 280
+270 print tab(14);k;tab(20);". . . . . . . . . ."
+280 next k
+290 print
+300 print tab(20);"0 1 2 3 4 5 6 7 8 9"
+310 print
+320 print tab(26);"SOUTH"
+330 print
+340 print "TRY TO GUESS WHERE THE HURKLE IS HIDING. YOU GUESS"
+350 print "BY TELLING ME THE GRIDPOINT WHERE YOU THINK THAT"
+360 print "THE HURKLE IS HIDING. HOMEBASE IS POINT  0,0  IN"
+370 print "THE SOUTHWEST CORNER. YOUR GUESS SHOULD BE A PAIR"
+380 print "OF WHOLE NUMBERS, SEPARATED BY A COMMA. THE FIRST"
+390 print "NUMBER TELLS HOW FAR TO THE RIGHT OF HOMEBASE AND"
+400 print "THE SECOND NUMBER TELLS HOW FAR ABOVE HOMEBASE YOU"
+410 print "THINK THE HURKLE IS HIDING. FOR EXAMPLE, IF YOU "
+420 print "THINK THE HURKLE IS 7 TO THE RIGHT AND 5 ABOVE"
+430 print "HOMEBASE, YOU ENTER  7,5  AS YOUR GUESS AND THEN"
+440 print "PRESS THE 'RETURN' KEY. AFTER EACH GUESS, I WILL"
+450 print "TELL YOU THE APPROXIMAT DIRECTION TO GO FOR YOUR"
+460 print "NEXT GUESS. GOOD LUCK!"
+470 print
+480 rem *** HURKLE 'PICKS' A GRIDPOINT AND HIDES
+490 a=int(10*rnd)
+500 b=int(10*rnd)
+510 print
+520 print "THE HURKLE IS HIDING - YOU GET";n;" GUESSES TO FIND HIM."
+530 print
+540 rem *** GET A GUESS AND PRINT INFO FOR PLAYER
+550 for k=1 to n
+560 print "WHAT IS YOUR GUESS";
+570 input x,y
+580 if abs(x-a)+abs(y-b)=0 then goto 710
+590 rem *** GO TO INFO SUBROUTINE
+600 gosub 760
+610 print
+620 next k
+630 print
+640 rem *** HURKLE WAS NOT FOUND IN N GUESSES
+650 print "SORRY, THAT'S";n;" GUESSES."
+660 print "THE HURKLE IS AT ";a;",";b
+670 print
+680 print "LET'S PLAY AGAIN."
+690 goto 490
+700 rem *** HURKLE HAS BEEN FOUND!
+710 print
+720 print "YOU FOUND HIM IN";k;" GUESSES!!!"
+730 print "LET'S PLAY AGAIN."
+740 goto 490
+750 rem *** SUBROUTINE: PRINT INFORMATION FOR NEXT GUESS
+760 print "GO ";
+770 if y=b then goto 820
+780 if y<b then goto 810
+790 print "SOUTH";
+800 goto 820
+810 print "NORTH";
+820 if x=a then goto 870
+830 if x<a then goto 860
+840 print "WEST";
+850 goto 870
+860 print "EAST";
+870 print
+880 return
+890 end
