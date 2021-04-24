@@ -38,3 +38,7 @@ mugwump.bas - hide and seek game
 scale2.bas - tempered scale frequency generator
 
 hurkle.bas - hide and seek game
+
+## People's Computer Company newsletter Vol. 1, No. 5 (May 1973)
+
+reverse.bas - number sorting game
