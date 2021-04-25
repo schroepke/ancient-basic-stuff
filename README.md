@@ -42,3 +42,5 @@ hurkle.bas - hide and seek game
 ## People's Computer Company newsletter Vol. 1, No. 5 (May 1973)
 
 reverse.bas - number sorting game
+
+pointers.bas - demonstration of linked list
