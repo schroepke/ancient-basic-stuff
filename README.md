@@ -44,3 +44,8 @@ hurkle.bas - hide and seek game
 reverse.bas - number sorting game
 
 pointers.bas - demonstration of linked list
+
+## PCC Games (1974)
+
+trap.bas - another number guessing game
+
