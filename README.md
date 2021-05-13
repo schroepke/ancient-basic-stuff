@@ -50,3 +50,5 @@ pointers.bas - demonstration of linked list
 trap.bas - another number guessing game
 
 bagels.bas - Mastermind variant
+
+bagel2.bas - Beyond Bagels - another Mastermind variant
