@@ -1,0 +1,64 @@
+100 rem *** SNARK ... CATCH HIM WITH A WELL PLACED CIRCLE
+110 rem *** PEOPLE'S COMPUTER COMPANY, MENLO PARK CA
+120 rem *** SOME COMPUTERS NEED 'RANDOM' HERE
+121 randomize timer
+150 print "WANT THE RULES (1=YES  0=NO)";
+160 input z
+170 if z=0 then goto 510
+200 rem *** HERE ARE THE RULES
+210 print
+220 print "A SNARK IS HIDING IN A 10 BY 10 GRID LIKE THE ONE"
+230 print "SHOWN BELOW:"
+240 print
+245 print " Y"
+250 for y=9 to 0 step -1
+260 print y;" . . . . . . . . . ."
+270 next y
+280 print
+290 print tab(3);" 0 1 2 3 4 5 6 7 8 9 X"
+300 print
+310 print "TRY TO CATCH HIM. HERE'S HOW ... WHEN I ASK, YOU TYPE"
+320 print "THE X,Y COORDINATES OF A GRIDPOINT (IF YOU DON'T KNOW"
+330 print "WHAT THAT MEANS, ASK SOMEBODY!) AND PRESS THE RETURN"
+340 print "KEY. THEN, WHEN I ASK FOR 'RADIUS', YOU TYPE THE RADIUS"
+350 print "OF A CIRCLE CENTERED ON THE GRIDPOINT WHOSE X,Y"
+360 print "COORDINATES YOU JUST ENTERED. I WILL THEN TELL YOU"
+370 print "WHETHER THE SNARK IS 'INSIDE' YOUR CIRCLE, 'OUTSIDE'"
+380 print "YOUR CIRCLE, OR 'ON' YOUR CIRCLE."
+390 print
+400 print "!!! IMPORTANT !!! IF YOU THINK YOU KNOW WHERE HE IS"
+410 print "HIDING, ENTER 0 (ZERO) AS THE RADIUS. GOOD HUNTING."
+500 rem *** HIDE THE SNARK
+510 x=int(10*rnd)
+520 y=int(10*rnd)
+530 print
+540 print "SNARK IS HIDING ... START GUESSING!"
+600 rem *** GUESSING BEGINS
+610 k=1
+620 print
+630 print "COORDINATES";
+640 input a,b
+650 d2=(x-a)*(x-a)+(y-b)*(y-b)
+660 print "RADIUS";
+670 input r
+680 if r<>0 then goto 700
+690 if d2=0 then goto 910
+700 if d2<r*r then goto 730
+710 if d2>r*r then goto 750
+720 if d2=r*r then goto 770
+730 print "SNARK IS INSIDE YOUR CIRCLE"
+740 goto 780
+750 print "SNARK IS OUTSIDE YOUR CIRCLE"
+760 goto 780
+770 print "SNARK IS ON YOUR CIRCLE"
+780 k=k+1
+790 goto 620
+900 rem *** WE GOT A WINNER
+910 print
+920 print "YOU CAUGHT HIM IN";k;" GUESSES!!!"
+930 print "GOOD SHOW!"
+940 print
+950 print "DO YOU WANT TO PLAY AGAIN (1=YES  0=NO)";
+960 input z
+970 if z=1 then goto 510
+999 end
