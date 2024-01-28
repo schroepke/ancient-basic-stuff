@@ -45,6 +45,10 @@ reverse.bas - number sorting game
 
 pointers.bas - demonstration of linked list
 
+## People's Computer Company newsletter Vol. 2, No. 1 (September 1973)
+
+taxman.bas - mathematical puzzle game
+
 ## PCC Games (1974)
 
 trap.bas - another number guessing game
