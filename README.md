@@ -54,3 +54,5 @@ bagels.bas - Mastermind variant
 bagel2.bas - Beyond Bagels - another Mastermind variant
 
 snark.bas - hide and seek game
+
+button.bas - guessing game
