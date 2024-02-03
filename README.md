@@ -57,11 +57,10 @@ bagels.bas - Mastermind variant
 
 bagel2.bas - Beyond Bagels - another Mastermind variant
 
-## Computer Notes February 1976
-
-slot.bas - slot machine game
-
-
 snark.bas - hide and seek game
 
 button.bas - guessing game
+
+## Computer Notes February 1976
+
+slot.bas - slot machine game
